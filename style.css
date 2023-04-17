@@ -1,0 +1,141 @@
+:root {
+    --verde-claro: #89d162;
+    --verde-escuro: #08ac93;
+    --fonte-geral: #05191d;
+    --verde-background: #c9e8bb;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    top: 0;
+    background-color: var(--verde-escuro)
+}
+
+.header .icon {
+    display: flex;
+    gap: 10px;
+}
+
+.header .icon i {
+    font-size: 2em;
+}
+
+.header .icon h2 {
+    font-size: 2em;
+    color: var(--fonte-geral);
+    font-weight: 700;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu ul li a {
+    color: var(--fonte-geral);
+    font-size: 1.1em;
+    transition: 0.25s ease-out;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.menu ul li a:hover {
+    background-color: var(--verde-claro);
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.home {
+    margin-top: 73.8px;
+    width: 100%;
+    position: relative;
+}
+
+.home-mural {
+    background-image: url(./imgs/background-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 220px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+}
+
+.home-mural h3 {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    font-size: 2.5em;
+    color: #89d162
+}
+
+.home-mural h1 {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    font-weight: 700;
+    font-size: 5em;
+    color: var(--fonte-geral);
+}
+
+#mercado {
+    color: var(--fonte-geral);
+    margin-top: 0;
+    width: 100%;
+}
+
+#mercado .mercado-titulo {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+#mercado h2,
+#mercado i {
+    font-size: 3em;
+}
+
+.mercado-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#mercado .mercado-texto h3 {
+    font-weight: 700;
+    font-size: 2em;
+    width: 50%;
+    margin: 30px 80px;
+}
+
+#mercado .mercado-texto img {
+    width: 350px;
+    height: 250px;
+    margin: 30px 80px;
+    border-radius: 50%;
+}
+
+.mercado-imgs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mercado-imgs img {
+    width: 350px;
+    height: 350px;
+}

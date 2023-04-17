@@ -1,0 +1,13 @@
+@media (max-width: 790px){
+    .mercado-texto {
+        flex-direction: column-reverse;
+    }
+
+    .home-mural h3  {
+        font-size: 1.5em;
+    }
+
+    .home-mural h1 {
+        font-size: 3em;
+    }
+}
