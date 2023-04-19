@@ -119,6 +119,11 @@
     font-size: 2em;
     width: 50%;
     margin: 30px 80px;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #000;
+    background-color: var(--verde-claro);
+    text-align: center;
 }
 
 #mercado .mercado-texto img {
