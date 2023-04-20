@@ -18,9 +18,9 @@ ul {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #c9e8bb;
+    background-image: linear-gradient(90deg, #c9e8bb,#89d162, #08ac93);
     scroll-behavior: smooth;
-
-    background-image: linear-gradient(100deg, #c9e8bb, #08ac93)
+    
 }
 
 i {
