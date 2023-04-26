@@ -5,6 +5,8 @@
     --verde-background: #c9e8bb;
 }
 
+/* HEADER */
+
 .header {
     display: flex;
     align-items: center;
@@ -14,7 +16,8 @@
     height: 10%;
     padding: 10px;
     top: 0;
-    background-color: var(--verde-background)
+    background-color: var(--verde-background);
+    min-height: 75px;
 }
 
 .header .icon {
@@ -32,28 +35,7 @@
     font-weight: 700;
 }
 
-.menu ul {
-    display: flex;
-    align-items: center;
-
-}
-
-.menu ul li a {
-    color: var(--fonte-geral);
-    font-size: 1.1em;
-    transition: 0.25s ease-out;
-    font-weight: 600;
-    padding: 15px;
-}
-
-.menu ul li a:hover {
-    background-color: var(--verde-claro);
-    margin: 0;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: #fff;
-}
-
+/* HOME */
 .home {
     margin-top: 73.8px;
     width: 100%;
@@ -89,31 +71,40 @@
     color: var(--fonte-geral);
 }
 
-#mercado,
-#entradas,
-#refeicoes {
+/* MERCADO, ENTRADAS, REFEIÇÕES E BEBIDAS */
+
+.mercado,
+.entradas,
+.refeicoes,
+.bebidas
+ {
     color: var(--fonte-geral);
     margin-top: 0;
     width: 100%;
 }
 
-#mercado .mercado-titulo,
-#entradas .entradas-titulo,
-#refeicoes .refeicoes-titulo {
+.mercado .mercado-titulo,
+.entradas .entradas-titulo,
+.refeicoes .refeicoes-titulo,
+.bebidas .bebidas-titulo {
     margin-top: 50px;
     margin-left: 50px;
     display: flex;
     gap: 10px;
 }
 
-#mercado h2,
-#mercado i,
-#entradas h2,
-#entradas i,
-#refeicoes h2,
-#refeicoes i {
+.mercado h2,
+.mercado i,
+.entradas h2,
+.entradas i,
+.refeicoes h2,
+.refeicoes i,
+.bebidas h2,
+.bebidas i {
     font-size: 3em;
 }
+
+/* MERCADO - ESPECÍFICO */
 
 .mercado-texto {
     display: flex;
@@ -122,7 +113,7 @@
     padding: 20px;
 }
 
-#mercado .mercado-texto h3 {
+.mercado .mercado-texto h3 {
     font-weight: 700;
     font-size: 2em;
     width: 50%;
@@ -134,42 +125,47 @@
     text-align: center;
 }
 
-#mercado .mercado-texto img {
+.mercado .mercado-texto img {
     width: 350px;
     height: 250px;
     margin: 30px 80px;
     border-radius: 50%;
 }
 
-#mercado .mercado-imgs {
+.mercado .mercado-imgs {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#mercado .mercado-imgs img {
+.mercado .mercado-imgs img {
     width: 450px;
     height: 400px;
     border-radius: 10px;
 }
 
-#entradas .paineis-entradas .painel-entrada img,
-#refeicoes .paineis-refeicoes .painel-refeicoes img {
+/* ENTRADAS | REFEIÇÕES  | BEBIDAS - ESPECÍFICOS */
+
+.entradas .paineis-entradas .painel-entrada img,
+.refeicoes .paineis-refeicoes .painel-refeicoes img,
+.bebidas .paineis-bebidas .painel-bebidas img {
     width: 450px;
     height: 400px;
     border-radius: 10px;
 }
 
-#entradas .paineis-entradas,
-#refeicoes .paineis-refeicoes {
+.entradas .paineis-entradas,
+.refeicoes .paineis-refeicoes,
+.bebidas .paineis-bebidas {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 25px;
 }
 
-#entradas .entradas-texto h3,
-#refeicoes .refeicoes-texto h3{
+.entradas .entradas-texto h3,
+.refeicoes .refeicoes-texto h3, 
+.bebidas .bebidas-texto h3{
     font-weight: 700;
     font-size: 2em;
     width: 50%;
