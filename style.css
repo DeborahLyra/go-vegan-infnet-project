@@ -1,8 +1,8 @@
 :root {
-    --verde-claro: #89d162;
-    --verde-escuro: #08ac93;
+    --verde-claro: #00FF7F;
+    --verde-escuro: #3CB371;
     --fonte-geral: #05191d;
-    --verde-background: #c9e8bb;
+    --verde-background: #b9e6a4;
 }
 
 /* HEADER */
@@ -10,6 +10,7 @@
 .header {
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
@@ -126,7 +127,7 @@
 }
 
 .mercado .mercado-texto img {
-    width: 350px;
+    width: 250px;
     height: 250px;
     margin: 30px 80px;
     border-radius: 50%;
@@ -139,8 +140,8 @@
 }
 
 .mercado .mercado-imgs img {
-    width: 450px;
-    height: 400px;
+    width: 350px;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -149,8 +150,8 @@
 .entradas .paineis-entradas .painel-entrada img,
 .refeicoes .paineis-refeicoes .painel-refeicoes img,
 .bebidas .paineis-bebidas .painel-bebidas img {
-    width: 450px;
-    height: 400px;
+    width: 350px;
+    height: 300px;
     border-radius: 10px;
 }
 
