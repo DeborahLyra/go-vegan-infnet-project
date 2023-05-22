@@ -177,3 +177,38 @@
     background-color: var(--verde-background);
     text-align: center;
 }
+
+/* QUEM SOMOS */
+
+.quem-somos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px ;
+}
+
+.quem-somos img {
+    width: 600PX;
+    border-radius: 10px;
+}
+
+.quem-somos .quem-somos-info .quem-somos-titulo {
+    display: flex;
+    gap: 10px;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.quem-somos .quem-somos-info .quem-somos-titulo i {
+    font-size: 1.8em;
+}
+
+.quem-somos .quem-somos-info{
+    max-width: 460px;
+    text-align: justify;
+}
+
+.quem-somos .quem-somos-info p{
+    font-size: 1.5em;
+    line-height: 1.7em;
+}
