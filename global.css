@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 
 
 * {
@@ -17,6 +19,7 @@ ul {
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     background-color: #c9e8bb;
     background-image: linear-gradient(90deg, #c9e8bb,#89d162, #08ac93);
     scroll-behavior: smooth;

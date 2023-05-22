@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="form.css">
 
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 
@@ -254,10 +255,10 @@
                 <i class="fas fa-seedling"></i>
                 <h2>Quem somos</h2>
             </div>
-            
+
             <p class="quem-somos-texto">
-                O Go Vegan é um restaurante e mercado familiar, estamos há mais de 15 anos no merdaco, 
-                nós oferecemos produtos livres de agrotóxicos e qualquer outro tipo de elementos químicos. 
+                O Go Vegan é um restaurante e mercado familiar, estamos há mais de 15 anos no merdaco,
+                nós oferecemos produtos livres de agrotóxicos e qualquer outro tipo de elementos químicos.
                 Todos os ingredientes são cultivados em nossa fazenda Pedacinho do Céu.
 
             </p>
@@ -265,19 +266,70 @@
 
         <img src="./imgs/quem-somos-2.jpg" alt="familia go vegan">
 
-
-
     </section>
 
     <section id="contato" class="contato">
+
+        <div class="contato-titulo">
+            <i class="fas fa-seedling"></i>
+            <h2>Contato</h2>
+        </div>
+
+        <div class="contato-coteudo">
+
+            <div class="form-label">
+
+                <p class="label">Tem alguma dúvida? Entre em contato</p>
+                <form class="form">
+                    <input class="input-form" name="name" type="text" placeholder="Nome completo *">
+                    <label class="obrigatorio" for="nome">campo obrigatório</label>
+
+
+                    <input class="input-form" name="email" type="email" placeholder="Email *">
+                    <label class="obrigatorio" for="email">campo obrigatório</label>
+
+                    <input class="input-form" name="number" type="number" placeholder="Telefone *">
+                    <label class="obrigatorio" for="number">campo obrigatório</label>
+
+                    <textarea class="input-form text-area" name="message" style="resize: none"
+                        placeholder="Mensagem *"></textarea>
+                    <label class="obrigatorio" for="message">campo obrigatório</label>
+
+                    <p>*Campos obrigatórios</p>
+
+                    <input class="btn" type="submit" name="btn">
+                </form>
+
+            </div>
+
+            <div class="contato-texto">
+
+                <h4>Horário de funcionamento</h4>
+                <p>
+                    Seguna à quinta das 11h as 22h <br>
+                    Sexta e sábado das 11h as 23h <br>
+                    Domingos e feridos das 12h as 20h
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
     <footer id="localizacao" class="localizacao">
 
+        
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31597.999071604645!2d-34.92134655346043!3d-8.126927681760845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fb60ecfb19b%3A0xb442389feeea73be!2sBoa%20Viagem%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1684792270658!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -212,3 +212,48 @@
     font-size: 1.5em;
     line-height: 1.7em;
 }
+
+/* CONTATO */
+
+.contato .contato-titulo {
+    display: flex;
+    gap: 10px;
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.contato .contato-titulo i {
+    font-size: 1.8em;
+}
+
+.contato .contato-coteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px ;
+}
+
+.contato .contato-coteudo .contato-texto h4 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.contato .contato-coteudo .contato-texto p{
+    max-width: 460px;
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.contato .contato-coteudo .form-label .label{
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-weight: 700;
+} 
+
+/* FOOTER */
+.localizacao iframe {
+    width: 100%;
+    height: 200px;
+}
