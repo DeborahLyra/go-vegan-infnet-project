@@ -1,3 +1,4 @@
+//RADIO
 const radioInput = document.querySelectorAll('.radio-input');
 
 radioInput.forEach((element, i) => {
@@ -13,6 +14,8 @@ function removerClasses() {
    })
  }
 
+//  CHECKBOX
+
 const checkboxInput = document.querySelectorAll('.checkbox-input')
 
 checkboxInput.forEach((element, i) => {
@@ -23,6 +26,7 @@ checkboxInput.forEach((element, i) => {
 });
 
 
+//FORM GERAL
 const inputForm = document.querySelectorAll('.input-form');
 const button = document.querySelector('.btn');
 const obrigatorio = document.querySelectorAll('.obrigatorio');
