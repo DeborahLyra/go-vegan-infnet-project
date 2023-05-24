@@ -1,3 +1,23 @@
+const radioInput = document.querySelectorAll('.radio-input');
+
+radioInput.forEach((element, i) => {
+
+   element.addEventListener('click', ()=>{
+      removerClasses()
+      element.classList.add('checked')
+   })
+});
+function removerClasses() {
+   radioInput.forEach(radioInput => {
+      radioInput.classList.remove('checked');
+   })
+ }
+
+
+
+
+
+
 const inputForm = document.querySelectorAll('.input-form');
 const button = document.querySelector('.btn');
 const obrigatorio = document.querySelectorAll('.obrigatorio');
