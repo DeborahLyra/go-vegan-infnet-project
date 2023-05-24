@@ -70,13 +70,13 @@ form {
 }
 
 
-.radio-form {
+.radio-form, .checkbox-form {
     display: flex;
     justify-content: center;
-   margin-top: 20px;
+   margin: 20px 0;
 }
 
-.radio-form .radio-input {
+.radio-form .radio-input, .checkbox-form .checkbox-input {
     width: 20px;
     height: 20px;
     border: 2px solid var(--verde-escuro);
@@ -88,3 +88,9 @@ form {
     background-color: var(--verde-claro);
     border: 2px solid var(--fonte-geral)
 }
+
+.checkbox-form .checkbox-input.checked {
+    background-color: var(--verde-claro);
+    border: 2px solid var(--fonte-geral)
+}
+

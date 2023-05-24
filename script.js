@@ -13,9 +13,14 @@ function removerClasses() {
    })
  }
 
+const checkboxInput = document.querySelectorAll('.checkbox-input')
 
+checkboxInput.forEach((element, i) => {
 
-
+   element.addEventListener('click', ()=>{
+      element.classList.add('checked')
+   })
+});
 
 
 const inputForm = document.querySelectorAll('.input-form');
