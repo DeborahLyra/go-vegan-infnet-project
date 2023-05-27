@@ -18,13 +18,28 @@ function removerClasses() {
 
 const checkboxInput = document.querySelectorAll('.checkbox-input')
 
-checkboxInput.forEach((element, i) => {
+checkboxInput.forEach(element => {
 
    element.addEventListener('click', ()=>{
-      element.classList.add('checked')
+      element.classList.toggle('checked')
    })
 });
 
+const checkAll = document.querySelector('.checkAll')
+
+console.log(checkAll)
+
+checkAll.addEventListener('click', () => {
+   if (checkAll.classList.contains('checked')) {
+      checkboxInput.forEach(element => {
+            element.classList.add('checked');
+      });
+   } else {
+      checkboxInput.forEach(element => {
+         element.classList.remove('checked');
+   });
+   }
+})
 
 //FORM GERAL
 const inputForm = document.querySelectorAll('.input-form');
@@ -45,3 +60,6 @@ button.addEventListener('click', (event) => {
    });
 
 });
+
+
+
