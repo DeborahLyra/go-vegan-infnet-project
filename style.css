@@ -178,9 +178,9 @@
 }
 
 .entradas .paineis-entradas h3,
-.mercado .mercado-imgs h4, 
+.mercado .mercado-imgs h4,
 .refeicoes .paineis-refeicoes h3,
-.bebidas .painel-bebidas h3{
+.bebidas .painel-bebidas h3 {
     font-size: 1.5em;
 }
 
@@ -287,3 +287,20 @@
     width: 100%;
     height: 200px;
 }
+
+.whatsappIcon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 45px;
+    background-color: var(--verde-claro);
+    height: 70px;
+    width:70px;
+    border-radius: 50px;
+    color: #ffff;
+    text-align: center;
+    padding: 12px;
+
+}
+
+

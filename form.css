@@ -1,6 +1,6 @@
 form {
     width: 720px;
-    max-height: 800px;
+    max-height: 1000px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;

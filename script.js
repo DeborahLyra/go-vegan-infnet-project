@@ -1,43 +1,39 @@
 //RADIO
 const radioInput = document.querySelectorAll('.radio-input');
 
-radioInput.forEach((element, i) => {
-
-   element.addEventListener('click', ()=>{
-      removerClasses()
-      element.classList.add('checked')
+radioInput.forEach(element => {
+   element.addEventListener('click', () => {
+      removerClasses();
+      element.classList.add('checked');
    })
 });
 function removerClasses() {
    radioInput.forEach(radioInput => {
       radioInput.classList.remove('checked');
    })
- }
+}
 
 //  CHECKBOX
 
-const checkboxInput = document.querySelectorAll('.checkbox-input')
+const checkboxInput = document.querySelectorAll('.checkbox-input');
 
 checkboxInput.forEach(element => {
-
-   element.addEventListener('click', ()=>{
-      element.classList.toggle('checked')
+   element.addEventListener('click', () => {
+      element.classList.toggle('checked');
    })
 });
 
 const checkAll = document.querySelector('.checkAll')
 
-console.log(checkAll)
-
 checkAll.addEventListener('click', () => {
    if (checkAll.classList.contains('checked')) {
       checkboxInput.forEach(element => {
-            element.classList.add('checked');
+         element.classList.add('checked');
       });
    } else {
       checkboxInput.forEach(element => {
          element.classList.remove('checked');
-   });
+      });
    }
 })
 
@@ -45,6 +41,7 @@ checkAll.addEventListener('click', () => {
 const inputForm = document.querySelectorAll('.input-form');
 const button = document.querySelector('.btn');
 const obrigatorio = document.querySelectorAll('.obrigatorio');
+const validation = document.querySelector('.validation')
 
 
 button.addEventListener('click', (event) => {
@@ -60,6 +57,9 @@ button.addEventListener('click', (event) => {
    });
 
 });
+
+
+
 
 
 
