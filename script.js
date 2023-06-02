@@ -13,6 +13,30 @@ function removerClasses() {
    })
 }
 
+
+//SELECT
+
+const selectInput = document.querySelector('.select-input');
+const dropDown = document.querySelector('.dropDown');
+const itemDropDown = document.querySelectorAll('.item-dropDown')
+
+selectInput.addEventListener('focus', () => {
+    dropDown.style.display = 'block';
+    
+})
+
+selectInput.addEventListener('blur', () => {
+    dropDown.style.display = 'none';
+})
+
+itemDropDown.forEach(item => {
+    item.addEventListener("mousedown", () => {
+        const text = item.innerHTML;
+        selectInput.value = text;
+    })
+})
+
+
 //  CHECKBOX
 
 const checkboxInput = document.querySelectorAll('.checkbox-input');
