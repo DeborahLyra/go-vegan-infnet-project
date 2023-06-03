@@ -1,17 +1,29 @@
 //RADIO
 const radioInput = document.querySelectorAll('.radio-input');
+const radioObrigatorio = document.querySelector('.radioObrigatorio')
 
 radioInput.forEach(element => {
    element.addEventListener('click', () => {
       removerClasses();
       element.classList.add('checked');
+      
    })
 });
 function removerClasses() {
    radioInput.forEach(radioInput => {
       radioInput.classList.remove('checked');
+      
    })
 }
+
+ function validateRadio () {
+      if () {
+         radioObrigatorio.classList.remove('showMessage')
+      } else {
+         radioObrigatorio.classList.add('showMessage')
+      }
+ }
+
 
 
 //SELECT
@@ -21,19 +33,19 @@ const dropDown = document.querySelector('.dropDown');
 const itemDropDown = document.querySelectorAll('.item-dropDown')
 
 selectInput.addEventListener('focus', () => {
-    dropDown.style.display = 'block';
-    
+   dropDown.style.display = 'block';
+
 })
 
 selectInput.addEventListener('blur', () => {
-    dropDown.style.display = 'none';
+   dropDown.style.display = 'none';
 })
 
 itemDropDown.forEach(item => {
-    item.addEventListener("mousedown", () => {
-        const text = item.innerHTML;
-        selectInput.value = text;
-    })
+   item.addEventListener("mousedown", () => {
+      const text = item.innerHTML;
+      selectInput.value = text;
+   })
 })
 
 
@@ -65,22 +77,70 @@ checkAll.addEventListener('click', () => {
 const inputForm = document.querySelectorAll('.input-form');
 const button = document.querySelector('.btn');
 const obrigatorio = document.querySelectorAll('.obrigatorio');
-const validation = document.querySelector('.validation')
+const requiredInputs = document.querySelectorAll('.required')
+
+const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var phoneRegex = new RegExp('^((1[1-9])|([2-9][0-9]))((3[0-9]{3}[0-9]{4})|(9[0-9]{3}[0-9]{5}))$');
+
+function validateName() {
+   if (requiredInputs[0].value.length >= 3) {
+      removeError(0)
+   } else {
+      error(0)
+   }
+}
+
+function validateEmail() {
+   if (emailRegex.test(requiredInputs[1].value)) {
+      removeError(1)
+   } else {
+      error(1)
+   }
+}
+
+function validatePhone() {
+   if (phoneRegex.test(requiredInputs[2].value)) {
+      removeError(2)
+   } else {
+      error(2)
+   }
+
+}
+
+function validateTextArea() {
+   if (requiredInputs[3].value.length >= 5) {
+      removeError(3)
+   } else {
+      error(3)
+   }
+}
+
 
 
 button.addEventListener('click', (event) => {
    event.preventDefault()
-
-   inputForm.forEach((element, i) => {
-      if (element.value !== '') {
-         inputForm[i].classList.add('correct')
-      } else {
-         inputForm[i].classList.add('notCorrect')
-         obrigatorio[i].classList.add('showMessage')
-      }
-   });
+   validateName()
+   validateEmail()
+   validatePhone()
+   validateTextArea()
+   validateRadio()
 
 });
+
+
+
+function error(i) {
+   inputForm[i].classList.remove('correct')
+   inputForm[i].classList.add('notCorrect')
+   obrigatorio[i].classList.add('showMessage')
+}
+
+function removeError(i) {
+   inputForm[i].classList.add('correct')
+   inputForm[i].classList.remove('notCorrect')
+   obrigatorio[i].classList.remove('showMessage')
+}
+
 
 
 

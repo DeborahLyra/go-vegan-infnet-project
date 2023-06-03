@@ -282,14 +282,14 @@
                 </p>
 
                 <form class="form">
-                    <input class="input-form" name="name" type="text" placeholder="Nome completo">
+                    <input class="input-form required" name="name" type="text" placeholder="Nome completo">
                     <label class="obrigatorio" for="nome">Deve conter ao menos 3 caracteres</label>
 
 
-                    <input class="input-form" name="email" type="email" placeholder="Email">
+                    <input class="input-form required" name="email" type="email" placeholder="Email">
                     <label class="obrigatorio" for="email">Digite um email válido</label>
 
-                    <input class="input-form" name="number" type="number" placeholder="Telefone">
+                    <input class="input-form required" name="number" type="number" placeholder="Telefone">
                     <label class="obrigatorio" for="number">Digite um número válido</label>
 
 
@@ -302,7 +302,7 @@
                         <div class="radio-input"></div>
                         <p class="radio-text">Outros</p>
                     </div>
-                    <label class="obrigatorio" for="radio-form">Escolha uma opção</label>
+                    <label class="radioObrigatorio" for="radio-form">Escolha uma opção</label>
 
                     <p>Qual o tema?</p>
 
@@ -322,8 +322,6 @@
                 
                     </div>
 
-
-
                     <p>Como você prefere entremos em contato através de:</p>
                     <div class="checkbox-form">
                         <div class="checkbox-input"></div>
@@ -335,13 +333,11 @@
                         <div class="checkbox-input checkAll"></div>
                         <p class="checkbox-text">Marcar/Desmarcar todos</p>
                     </div>
-                    <label class="obrigatorio" for="checkbox-form">Escolha uma opção</label>
+                    <label for="checkbox-form">Escolha uma opção</label>
 
-                    <textarea class="input-form text-area" name="message" style="resize: none"
+                    <textarea class="input-form text-area required" name="message"
                         placeholder="Mensagem"></textarea>
                     <label class="obrigatorio" for="message">Deve conter no mínimo 5 caracteres</label>
-
-                    <p>Todos os campos obrigatórios</p>
 
                     <input class="btn" type="submit" name="btn">
                 </form>

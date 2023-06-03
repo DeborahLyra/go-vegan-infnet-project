@@ -20,12 +20,13 @@ form {
     outline: none;
 }
 
-.form .input-form::placeholder{
+.form .input-form::placeholder {
     color: #A8A8A8;
 }
 
 .form .text-area {
     height: 200px;
+    resize: none;
 }
 
 .btn {
@@ -45,7 +46,8 @@ form {
     font-weight: 900;
 }
 
-.form .obrigatorio {
+.form .obrigatorio,
+.form .radioObrigatorio {
     font-size: 18px;
     margin-left: 25px;
     margin-top: -20px;
@@ -62,22 +64,25 @@ form {
     border: 1px solid #F52E2E;
 }
 
-.form .obrigatorio.showMessage {
+.form .obrigatorio.showMessage,
+.form .radioObrigatorio.showMessage {
     opacity: 1;
-} 
+}
 
 .form .input-form.correct {
     border: 1px solid var(--verde-claro);
 }
 
 
-.radio-form, .checkbox-form {
+.radio-form,
+.checkbox-form {
     display: flex;
     justify-content: center;
-   margin: 20px 0;
+    margin: 20px 0;
 }
 
-.radio-form .radio-input, .checkbox-form .checkbox-input {
+.radio-form .radio-input,
+.checkbox-form .checkbox-input {
     width: 20px;
     height: 20px;
     border: 2px solid #000000;
@@ -97,7 +102,7 @@ form {
 
 
 
-.select-input{
+.select-input {
     margin: 10px 20px;
     height: 60px;
     width: 650px;
@@ -110,13 +115,16 @@ form {
     cursor: pointer;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
     color: #A8A8A8;
     font-size: 20px;
 }
-input::-moz-placeholder{color: #7777}
 
-.dropDown{
+input::-moz-placeholder {
+    color: #7777
+}
+
+.dropDown {
     margin-left: 20px;
     width: 650px;
     background-color: var(--verde-background);
@@ -128,15 +136,15 @@ input::-moz-placeholder{color: #7777}
     display: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color:var(--verde-escuro);
+    background-color: var(--verde-escuro);
 }
 
 .item-dropDown {
@@ -147,8 +155,8 @@ input::-moz-placeholder{color: #7777}
     cursor: pointer;
 }
 
-.item-dropDown:hover{
-    background-color:var(--verde-claro);
+.item-dropDown:hover {
+    background-color: var(--verde-claro);
     padding-left: 15px;
     transition: .4s ease-in-out;
 }
