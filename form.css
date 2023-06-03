@@ -39,6 +39,7 @@ form {
     border: none;
     cursor: pointer;
     transition: 0.3 ease-in-out;
+    outline: none;
 }
 
 .btn:hover {
@@ -47,7 +48,9 @@ form {
 }
 
 .form .obrigatorio,
-.form .radioObrigatorio {
+.form .radioObrigatorio,
+.form .checkboxObrigatorio,
+.form .selectObrigatorio {
     font-size: 18px;
     margin-left: 25px;
     margin-top: -20px;
@@ -59,13 +62,20 @@ form {
     margin: 0 20px;
 }
 
+.form .form-question {
+    margin-top: 15px;
+}
 
-.form .input-form.notCorrect {
+
+.form .input-form.notCorrect,
+.form .select-input.notCorrect{
     border: 1px solid #F52E2E;
 }
 
 .form .obrigatorio.showMessage,
-.form .radioObrigatorio.showMessage {
+.form .radioObrigatorio.showMessage,
+.form .checkboxObrigatorio.showMessage,
+.form .selectObrigatorio.showMessage {
     opacity: 1;
 }
 

@@ -6,35 +6,34 @@ radioInput.forEach(element => {
    element.addEventListener('click', () => {
       removerClasses();
       element.classList.add('checked');
-      
    })
 });
 function removerClasses() {
    radioInput.forEach(radioInput => {
       radioInput.classList.remove('checked');
-      
    })
 }
 
- function validateRadio () {
-      if () {
+function validateRadio() {
+   for (let i = 0; i < radioInput.length; i++) {
+      if (radioInput[i].classList.contains('checked')) {
          radioObrigatorio.classList.remove('showMessage')
+         break
       } else {
          radioObrigatorio.classList.add('showMessage')
       }
- }
-
-
+   }
+}
 
 //SELECT
 
 const selectInput = document.querySelector('.select-input');
 const dropDown = document.querySelector('.dropDown');
-const itemDropDown = document.querySelectorAll('.item-dropDown')
+const itemDropDown = document.querySelectorAll('.item-dropDown');
+const selectObrigatorio = document.querySelector('.selectObrigatorio');
 
 selectInput.addEventListener('focus', () => {
    dropDown.style.display = 'block';
-
 })
 
 selectInput.addEventListener('blur', () => {
@@ -48,10 +47,21 @@ itemDropDown.forEach(item => {
    })
 })
 
+function validateSelect() {
+      if (selectInput.value.length !== 0) {
+         selectObrigatorio.classList.remove('showMessage')
+      } else {
+         selectObrigatorio.classList.add('showMessage') 
+         selectInput.classList.add('notCorrect') 
+      }
+}
+
+console.log (selectInput.value.length)
 
 //  CHECKBOX
 
 const checkboxInput = document.querySelectorAll('.checkbox-input');
+const checkboxObrigatorio = document.querySelector('.checkboxObrigatorio');
 
 checkboxInput.forEach(element => {
    element.addEventListener('click', () => {
@@ -72,6 +82,18 @@ checkAll.addEventListener('click', () => {
       });
    }
 })
+
+function validateCheckbox () {
+   for (let i = 0; i < checkboxInput.length; i++) {
+      if (checkboxInput[i].classList.contains('checked')) {
+         checkboxObrigatorio.classList.remove('showMessage')
+         break
+      } else {
+         checkboxObrigatorio.classList.add('showMessage')
+      }
+   }
+}
+
 
 //FORM GERAL
 const inputForm = document.querySelectorAll('.input-form');
@@ -104,7 +126,6 @@ function validatePhone() {
    } else {
       error(2)
    }
-
 }
 
 function validateTextArea() {
@@ -115,19 +136,17 @@ function validateTextArea() {
    }
 }
 
-
-
 button.addEventListener('click', (event) => {
-   event.preventDefault()
-   validateName()
-   validateEmail()
-   validatePhone()
-   validateTextArea()
-   validateRadio()
+   event.preventDefault();
+   validateName();
+   validateEmail();
+   validatePhone();
+   validateTextArea();
+   validateRadio();
+   validateCheckbox(); 
+   validateSelect();
 
 });
-
-
 
 function error(i) {
    inputForm[i].classList.remove('correct')

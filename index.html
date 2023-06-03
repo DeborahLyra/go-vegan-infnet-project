@@ -293,7 +293,7 @@
                     <label class="obrigatorio" for="number">Digite um número válido</label>
 
 
-                    <p>Você deseja falar sobre o que?</p>
+                    <p class="form-question">Você deseja falar sobre o que?</p>
                     <div class="radio-form">
                         <div class="radio-input"></div>
                         <p class="radio-text">Mercado</p>
@@ -304,7 +304,7 @@
                     </div>
                     <label class="radioObrigatorio" for="radio-form">Escolha uma opção</label>
 
-                    <p>Qual o tema?</p>
+                    <p class="form-question">Qual o tema?</p>
 
                     <div class="select-container">
                         <input type="text" name="select-input" class="select-input" placeholder="Selecione um tema" readonly>
@@ -317,12 +317,13 @@
                                 <div class="item-dropDown" id="item-dropDown-5">Aimais de estimação/Pet friendly</div>
                                 <div class="item-dropDown" id="item-dropDown-6">Fazenda Pedacinho do Céu</div>
                             </div>
+                            <label class="selectObrigatorio" for="select-container">Escolha uma opção</label>
                 
                         </div>
                 
                     </div>
 
-                    <p>Como você prefere entremos em contato através de:</p>
+                    <p class="form-question">Como você prefere entremos em contato através de:</p>
                     <div class="checkbox-form">
                         <div class="checkbox-input"></div>
                         <p class="checkbox-text">Email</p>
@@ -333,7 +334,7 @@
                         <div class="checkbox-input checkAll"></div>
                         <p class="checkbox-text">Marcar/Desmarcar todos</p>
                     </div>
-                    <label for="checkbox-form">Escolha uma opção</label>
+                    <label class="checkboxObrigatorio" for="checkbox-form">Escolha uma opção</label>
 
                     <textarea class="input-form text-area required" name="message"
                         placeholder="Mensagem"></textarea>
