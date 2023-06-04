@@ -50,9 +50,12 @@ itemDropDown.forEach(item => {
 function validateSelect() {
       if (selectInput.value.length !== 0) {
          selectObrigatorio.classList.remove('showMessage')
+         selectInput.classList.remove('notCorrect') 
+         console.log('1')
       } else {
          selectObrigatorio.classList.add('showMessage') 
          selectInput.classList.add('notCorrect') 
+         console.log('2')
       }
 }
 

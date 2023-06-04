@@ -58,6 +58,10 @@ form {
     color: #F52E2E;
 }
 
+.form .selectObrigatorio {
+   margin-top: 5px;
+}
+
 .form p {
     margin: 0 20px;
 }
