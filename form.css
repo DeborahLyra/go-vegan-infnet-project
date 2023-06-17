@@ -47,6 +47,10 @@ form {
     font-weight: 900;
 }
 
+.btn:active {
+    transform: scale(0.98);
+}
+
 .form .obrigatorio,
 .form .radioObrigatorio,
 .form .checkboxObrigatorio,
@@ -83,7 +87,8 @@ form {
     opacity: 1;
 }
 
-.form .input-form.correct {
+.form .input-form.correct,
+.form .select-input.correct {
     border: 1px solid var(--verde-claro);
 }
 

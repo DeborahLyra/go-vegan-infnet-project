@@ -51,10 +51,12 @@ function validateSelect() {
       if (selectInput.value.length !== 0) {
          selectObrigatorio.classList.remove('showMessage')
          selectInput.classList.remove('notCorrect') 
+         selectInput.classList.add('correct')
          console.log('1')
       } else {
          selectObrigatorio.classList.add('showMessage') 
          selectInput.classList.add('notCorrect') 
+         selectInput.classList.remove('correct')
          console.log('2')
       }
 }
@@ -105,7 +107,7 @@ const obrigatorio = document.querySelectorAll('.obrigatorio');
 const requiredInputs = document.querySelectorAll('.required')
 
 const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-var phoneRegex = new RegExp('^((1[1-9])|([2-9][0-9]))((3[0-9]{3}[0-9]{4})|(9[0-9]{3}[0-9]{5}))$');
+const phoneRegex = new RegExp('^((1[1-9])|([2-9][0-9]))((3[0-9]{3}[0-9]{4})|(9[0-9]{3}[0-9]{5}))$');
 
 function validateName() {
    if (requiredInputs[0].value.length >= 3) {
